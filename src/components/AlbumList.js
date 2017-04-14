@@ -7,14 +7,20 @@ class AlbumList extends Component {
     componentWillMount() {
         console.log('componentWillMount in AlbumList')
         fetch('https://rallycoding.herokuapp.com/api/music_albums')
-        .then(response => console.log(response.json()))
+        .then(response => response.json())
+        .then(responseData => this.setState({ albums: responseData }))
         .catch(error => console.log(error))
     }
 
+    renderAlbums() {
+        return this.state.albums.map(album => <Text>{album.title}</Text>)
+    }
+
     render () {
+        console.log
         return (
             <View>
-                <Text>Album List</Text>
+                {this.renderAlbums()}
             </View>
         );
     }
