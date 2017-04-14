@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 class AlbumList extends Component {
+    state = { albums: [] }
+
     componentWillMount() {
         console.log('componentWillMount in AlbumList')
         fetch('https://rallycoding.herokuapp.com/api/music_albums')
