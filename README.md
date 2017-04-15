@@ -6,3 +6,6 @@ Run the app:
 - iOS: `react-native run-ios`
 - Android: `react-native run-android`
   
+iOS             |  Android
+:-------------------------:|:-------------------------:
+![iOS](images/iOS.png)  |   ![Android](images/Android.png)
