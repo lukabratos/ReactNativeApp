@@ -5,7 +5,7 @@ import AlbumDetail from './AlbumDetail'
 class AlbumList extends Component {
     state = { albums: [] }
 
-    componentWillMount() {
+    componentDidMount() {
         console.log('componentWillMount in AlbumList')
         fetch('https://rallycoding.herokuapp.com/api/music_albums')
         .then(response => response.json())
