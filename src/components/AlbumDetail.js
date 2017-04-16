@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Text, View, Image, Linking } from 'react-native';
+import React, { Component } from 'react'
+import { Text, View, Image, Linking } from 'react-native'
 import Card from './Card'
 import CardSection from './CardSection'
 import Button from './Button'
@@ -35,8 +35,8 @@ const AlbumDetail = ({ album }) => {
                 </Button>
             </CardSection>
         </Card>
-    );
-};
+    )
+}
 
 const styles = {
     headerContentStyle: {
@@ -63,4 +63,4 @@ const styles = {
     }
 }
 
-export default AlbumDetail;
+export default AlbumDetail
